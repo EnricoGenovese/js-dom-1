@@ -15,6 +15,17 @@
 
 .container {
     max-width: 1220px;
-    height: 200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#switch {
+    padding: 10px;
+    border-radius: 5px;
+}
+/* UTILITY */
+
+.d-none {
+    display: none;
 }
