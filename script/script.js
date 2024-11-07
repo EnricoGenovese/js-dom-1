@@ -12,16 +12,19 @@ console.clear();
 // Dichiarare le variabili degli elementi che servono per cambiare 
 // dinamincamente la pagina.
 
-const on = document.getElementById("on");
 const off = document.getElementById("off");
 const btn = document.getElementById("light-switch");
 
 
-function changeLight() {
-    off.classList.toggle
-}
 
 btn.addEventListener("click", function() {
+    if(off.src.includes("img/white_lamp.png")){
     off.src = "./img/yellow_lamp.png";
     off.alt = "on";
+    btn.innerHTML = "Click to turn off the light";
+    } else {
+        off.src = "./img/white_lamp.png";
+        off.alt = "off";
+        btn.innerHTML = "Click to turn on the light";
+    }    
 })
