@@ -14,7 +14,7 @@ console.clear();
 
 const off = document.getElementById("off");
 const btn = document.getElementById("light-switch");
-
+const bg = document.getElementById("room")
 
 
 btn.addEventListener("click", function() {
@@ -22,9 +22,13 @@ btn.addEventListener("click", function() {
     off.src = "./img/yellow_lamp.png";
     off.alt = "on";
     btn.innerHTML = "Click to turn off the light";
+    room.classList.add("bg-white");
+    room.classList.remove("bg-dark");
     } else {
         off.src = "./img/white_lamp.png";
         off.alt = "off";
         btn.innerHTML = "Click to turn on the light";
+        room.classList.remove("bg-white");
+        room.classList.add("bg-dark");
     }    
 })
